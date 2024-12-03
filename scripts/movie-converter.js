@@ -1,4 +1,4 @@
-import { movies } from "./movies-data";
+import { movies } from "./movies-data.js";
 
 export const generateMoviesHTML = () => {
   let movieHTML = "";
@@ -8,7 +8,7 @@ export const generateMoviesHTML = () => {
       <article class="movie">
         <img src="${movie.poster}" alt="${movie.title}" class="movie__poster" />
         <div class="movie__details">
-          <h2 class="movie_title">${movie_title}</h2>
+          <h2 class="movie_title">${movie.title}</h2>
           <p class="movie__description">${movie.description}</p>
         </div>
       </article>
